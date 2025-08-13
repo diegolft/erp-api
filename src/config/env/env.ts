@@ -9,6 +9,7 @@ const requiredEnvVars = [
   'DB_POSTGRES_USER',
   'DB_POSTGRES_PASSWORD',
   'DB_POSTGRES_NAME',
+  'JWT_SECRET',
 ];
 requiredEnvVars.forEach((envVar) => {
   if (!process.env[envVar]) {
